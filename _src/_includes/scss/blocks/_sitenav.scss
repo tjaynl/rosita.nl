@@ -23,6 +23,10 @@
     &.has-background,
     &.active {
         background-color: var(--clr-surface);
+
+        .site-nav__link {
+            --clr-link: ;
+        }
     }
 }
 
@@ -40,10 +44,11 @@
 
     &__item {
         padding: var(--space-2xs) var(--space-xs);
+        max-width: unset;
     }
 
     &__link {
-        color: var(--clr-text);
+        color: var(--clr-link);
         display: block;
         position: relative;
         text-decoration: none;
