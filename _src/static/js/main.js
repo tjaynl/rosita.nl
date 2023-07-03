@@ -6,6 +6,7 @@ const toggle = document.getElementById("hamburgerMenu");
 function toggleMenu() {
     navbar.classList.toggle("has-background");
     menu.classList.toggle("active");
+    toggle.classList.toggle("open");
 }
 
 // Add click event listener to the toggle element
