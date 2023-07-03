@@ -20,7 +20,8 @@
         z-index: 99999;
     }
 
-    &.has-background {
+    &.has-background,
+    &.active {
         background-color: var(--clr-surface);
     }
 }

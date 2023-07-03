@@ -4,7 +4,7 @@ const toggle = document.getElementById("hamburgerMenu");
 
 // Toggle mobile site navigation
 function toggleMenu() {
-    navbar.classList.toggle("has-background");
+    navbar.classList.toggle("active");
     menu.classList.toggle("active");
     toggle.classList.toggle("open");
 }
