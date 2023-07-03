@@ -1,3 +1,7 @@
+---
+areaDescription: De geschiedenis van Radio Rosita
+---
+
 # De geschiedenis van Radio Rosita
 
 Het was 31 December 1965 dat Harry Hoestee het idee kreeg om uitzendingen voor jong publiek de lucht in te sturen. Toen nog onder de naam Radio Isidorus
