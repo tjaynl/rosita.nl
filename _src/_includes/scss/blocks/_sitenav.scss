@@ -28,14 +28,14 @@
 
 [data-theme=dark] {
     .site-nav__link {
-        --clr-text: var(--clr-surface);
+        --clr-link: var(--clr-surface);
     }
 
     .navbar {
         &.has-background,
         &.active {
             .site-nav__link {
-                --clr-text: var(--clr-text);
+                --clr-link: var(--clr-text);
             }
         }
     }
