@@ -144,6 +144,10 @@ h3 {
 
 @import "scss/utilities/index";
 
+.text--center {
+    text-align: center;
+}
+
 .section-bg {
     background-color: var(--clr-primary);
 }
