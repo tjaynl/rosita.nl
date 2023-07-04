@@ -1,2 +1,2 @@
 # rosita.nl
-Website for a local Dutch radio station
+Static website for a local Dutch radio station
