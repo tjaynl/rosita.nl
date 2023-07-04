@@ -22,4 +22,6 @@ site.use(attributes())
     .use(svgo())
     .use(netlify_cms());
 
+site.copy("scripts", "/js");
+
 export default site;
