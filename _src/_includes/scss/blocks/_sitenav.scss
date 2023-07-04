@@ -26,7 +26,8 @@
     }
 }
 
-[data-theme=dark] {
+[data-theme="dark"],
+@media(prefers-color-scheme: dark) {
     .site-nav__link {
         --clr-link: var(--clr-surface);
     }
