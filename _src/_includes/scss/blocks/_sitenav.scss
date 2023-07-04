@@ -23,9 +23,20 @@
     &.has-background,
     &.active {
         background-color: var(--clr-surface);
+    }
+}
 
-        .site-nav__link {
-            --clr-link: ;
+[data-theme="dark"] {
+    .site-nav__link {
+        --clr-text: var(--clr-surface);
+    }
+
+    .navbar {
+        &.has-background,
+        &.active {
+            .site-nav__link {
+                --clr-text: var(--clr-text);
+            }
         }
     }
 }
@@ -72,6 +83,7 @@
 
         &[aria-current="page"] {
             color: var(--logo-color);
+            font-weight: 700;
             
             &::before {
                 width: 100%;
