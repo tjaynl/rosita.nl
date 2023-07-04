@@ -2,7 +2,7 @@
 areaDescription: De geschiedenis van Radio Rosita
 ---
 
-# De geschiedenis van Radio Rosita
+## De geschiedenis van Radio Rosita
 
 Het was 31 December 1965 dat Harry Hoestee het idee kreeg om uitzendingen voor jong publiek de lucht in te sturen. Toen nog onder de naam Radio Isidorus
 Met behulp van een bandrecorder uit 1956 hoorde men via de 200 meter middengolf iedere donderdagavond van 6 tot 7 uur de Tukker Top 10 in de studio van Radio Edison. (Henk Wolters) op een zendinstallatie die een bereik had van ruim 150 km, Na 3 maanden de programma’s te hebben ingesproken werd telefonisch om reacties gevraagd, hetgeen toen direct al positief uitviel. Maar een mens is niet gauw tevreden en Harry breidde zijn hobby uit. Al snel werd gedacht aan een zwaardere zender, een zogenaamde gestuurde 807, met een antennelengte van 130 meter, die tijdens de eerste herfst van Rosita twee keer per week naar beneden kwam. Zonder zijn ogen te openen klom Harry na 5 weken een 25 meter hoge boom in om de antenne weer te bevestigen. Op 1e Kerstdag 1967, toen om 11.45 uur (voor de eerste keer) de antenne met zendinstallatie het raam uitdonderde en Harry met verslagen gezicht de brokken bij elkaar raapte werd de hulp ingeroepen van Radio Bonanza, die zelfs met Kerst bereid was de programma’s van Radio Isidorus de lucht in te sturen. Harry merkte al snel dat er een correspondentie-adres nodig was, waar de eerste twee verzoekplaten binnen kwamen.
@@ -35,7 +35,7 @@ Tevens bij alle zomerfeesten in de weide omtrek.
 
 Harry Hoesstee heeft niet alleen als Dj en radioman zijn sporen verdiend maar ook als partime (zanger).
 Zo schoorde hij in 1994 een hit met Onze fiets is wieder da. en zelfs in 2004 een grote hit met Leaft onze oa
-## Harry & de Beugels zorgen voor een superfeest
+### Harry & de Beugels zorgen voor een superfeest
 
 Met hun grote hit: “Leaft oonze oale zoeplappe nog?” toeren ze door heel Overijsel en de Achterhoek. Overal waar ze optreden is het een half uur groot feest. Naast de bekende hit brengen ze nu een compleet programma waarbij het feestgehalte 100% is. Ook verschijnen ze op veel radio en tv stations. Ook Groningen heeft Harry en de Beugels inmiddels ontdekt, en Nederland zal de komende tijd nog veel van ze horen!
 Het Management van Harry & De Beugels is in handen van Rosita muziekorganisatie. Voor info kunt u bellen met 053 5726677 of mailen naar info@rosita.nl.
