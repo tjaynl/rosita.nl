@@ -1,0 +1,11 @@
+.card {
+    display: flex;
+    flex-direction: column;
+
+
+    &__image {}
+
+    &__content {
+        padding: var(--space-md);
+    }
+}
