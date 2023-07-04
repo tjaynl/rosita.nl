@@ -55,18 +55,18 @@
             position: absolute;
             content: "";
             width: 35%;
-            border: 1px solid var(--clr-text);
+            border: 1px solid var(--clr-link, var(--clr-text));
             bottom: 0;
             transition: width 300ms ease-in-out;
         }
 
         &:hover::before {
+            --clr-link: var(--clr-primary);
             width: 100%;
-            border-color: var(--clr-primary);
         }
 
         &[aria-current="page"] {
-            color: var(--logo-color);
+            color: var(--clr-link);
             font-weight: 700;
             
             &::before {
