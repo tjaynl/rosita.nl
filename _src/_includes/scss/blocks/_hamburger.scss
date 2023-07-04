@@ -11,9 +11,14 @@
     --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
 }
 
+
+@media(prefers-color-scheme: dark) {
+    --foreground: var(--clr-link);
+}
+
 .hamburger-menu {
-    appearance: none;
     --x-width: calc(var(--hamburger-height) * 1.41421356237);
+    appearance: none;
     display: flex;
     flex-direction: column;
     gap: var(--hamburger-gap);
