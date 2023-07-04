@@ -21,25 +21,22 @@
                     --foreground: var(--clr-surface);
                 }
 
-                .navbar {
-                    &.has-background,
-                    &.active {
-                        .hamburger-menu {
-                            --foreground: var(--clr-text);
-                        }
-                    }
+                .navbar.has-background .site-nav__link ,
+                .navbar.active .site-nav__link  {
+                    --clr-link: var(--clr-text);
+                }
 
-                    &.has-background,
-                    &.active,
-                    .site-nav.active {
-                        .site-nav__link {
-                            --clr-link: var(--clr-text);
-                        }
-                    }
+                .navbar.has-background .hamburger-menu,
+                .navbar.active .hamburger-menu {
+                    --foreground: var(--clr-text);
+                }
+
+                .site-nav.active  site-nav__link {
+                    --clr-link: var(--clr-text);
                 }
             }
         </style>
-        
+
         <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
     </head>
     <body>
