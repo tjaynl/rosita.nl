@@ -93,20 +93,3 @@
         }
     }
 }
-
-
-@media(prefers-color-scheme: dark) {
-    .site-nav__link {
-        --clr-link: var(--clr-surface);
-    }
-
-    .navbar {
-        &.has-background,
-        &.active
-        .site-nav.active {
-            .site-nav__link {
-                --clr-link: var(--clr-text);
-            }
-        }
-    }
-}

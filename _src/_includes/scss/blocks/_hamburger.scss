@@ -11,22 +11,6 @@
     --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
 }
 
-
-@media(prefers-color-scheme: dark) {
-    .hamburger-menu {
-        --foreground: var(--clr-surface);
-    }
-
-    .navbar {
-        &.has-background,
-        &.active {
-            .hamburger-menu {
-                --foreground: var(--clr-text);
-            }
-        }
-    }
-}
-
 .hamburger-menu {
     --x-width: calc(var(--hamburger-height) * 1.41421356237);
     appearance: none;

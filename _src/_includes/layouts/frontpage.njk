@@ -1,6 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-    {% include "head.njk" %}
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>{{ title }} // {{ site.title }}</title>
+        <link rel="canonical" href="{{ url | url(true) }}">
+
+        <meta name="description" content="{{ description or areaDescription or site.description }}" />
+
+        <link rel="stylesheet" href="/main.css">
+
+        <style>
+            @media(prefers-color-scheme: dark) {
+                .site-nav__link {
+                    --clr-link: var(--clr-surface);
+                }
+
+                .hamburger-menu {
+                    --foreground: var(--clr-surface);
+                }
+
+                .navbar {
+                    &.has-background,
+                    &.active {
+                        .hamburger-menu {
+                            --foreground: var(--clr-text);
+                        }
+                    }
+
+                    &.has-background,
+                    &.active,
+                    .site-nav.active {
+                        .site-nav__link {
+                            --clr-link: var(--clr-text);
+                        }
+                    }
+                }
+            }
+        </style>
+        
+        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+    </head>
     <body>
         <!-- Page: Header -->
         {% include "sitenav.njk" %}
