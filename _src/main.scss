@@ -162,6 +162,7 @@ article.post {
     background: var(--clr-primary) url("/static/img/hero-img.webp") no-repeat center center;
     background-size: cover;
     background-blend-mode: overlay;
+    margin-inline: 0;
 
     &__content {
         color: var(--clr-secondary);
