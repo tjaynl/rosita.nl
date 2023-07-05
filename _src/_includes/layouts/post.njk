@@ -1,0 +1,33 @@
+---
+layout: layouts/base.njk
+---
+
+<header class="post__header">
+    <div class="post__header--image">
+        <img src="{{ image | url }}" alt="" no-resize />
+    </div>
+</header>
+
+<article class="[ post ] [ fullwidth ] [ flow ]">
+    {{- content | safe -}}
+</article>
+
+<section>
+
+    {%- set previousItem = search.previousPage(url, "type=" + type, sort_by) %}
+    {%- if previousItem -%}
+    <a data-animate="from-left" style="text-decoration: none;" href="{{ previousItem.data.url | url }}" class="left">
+        <div class="subtext">Previous</div>
+        <h3>{{ previousItem.data.title }}</h3>
+    </a>
+    {%- endif -%}
+
+    {%- set nextItem = search.nextPage(url, "type=" + type, sort_by) %}
+    {%- if nextItem -%}
+    <a data-animate="from-right" style="text-decoration: none;" href="{{ nextItem.data.url | url }}" class="right">
+        <div class="subtext">Next</div>
+        <h3>{{ nextItem.data.title }}</h3>
+    </a>
+    {%- endif -%}
+
+</section>

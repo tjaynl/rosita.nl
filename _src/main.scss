@@ -118,7 +118,8 @@ h3 {
     }
 }
 
-.is-wrapped {
+.is-wrapped,
+article.post {
     & > * {
         max-width: 54rem;
         margin-inline: auto;
@@ -198,4 +199,33 @@ h3 {
 }
 .footer {
     --region-space: var(--space-lg);
+}
+
+
+
+
+// =============================================================
+
+@media(prefers-color-scheme: dark) {
+    .site-nav__link {
+        --clr-link: var(--clr-surface);
+    }
+
+    .hamburger-menu {
+        --foreground: var(--clr-surface);
+    }
+
+    .navbar.has-background .site-nav__link ,
+    .navbar.active .site-nav__link  {
+        --clr-link: var(--clr-text);
+    }
+
+    .navbar.has-background .hamburger-menu,
+    .navbar.active .hamburger-menu {
+        --foreground: var(--clr-text);
+    }
+
+    .site-nav.active  site-nav__link {
+        --clr-link: var(--clr-text);
+    }
 }

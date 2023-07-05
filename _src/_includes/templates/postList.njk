@@ -1,9 +1,7 @@
 {%- for post in posts -%}
 <div class="card">
-    <div class="card__image">
-        <img class="pos-abs" src="{{ post.data.image | url }}" alt="">
-    </div>
-    <div class="card__content">
+    <img class="card__image" src="{{ post.data.image | url }}" alt="" />
+    <div class="[ card__content ] [ flow ]">
         <h3>{{ post.data.title }}</h3>
         {{ content }}
     </div>

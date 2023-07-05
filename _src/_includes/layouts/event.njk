@@ -1,0 +1,23 @@
+---
+layout: layouts/post.njk
+---
+
+{% import "macros.njk" as macros %}
+
+<div class="flow">
+    <h1>{{ title }}</h1>
+    <div class="subtitle">
+        <em>{{ entity }}</em>
+        <div>{% include "templates/tagsList.njk" %}</div>
+    </div>
+</div>
+
+<hr>
+
+{{ description | md | safe }}
+
+{% if prices %}
+    <section class=""></section>
+{% endif %}
+
+{{- content | safe -}}
