@@ -9,9 +9,9 @@ Met behulp van een bandrecorder uit 1956 hoorde men via de 200 meter middengolf 
 In 1971 werd er alleen op zondag uitgezonden aangezien de dienstplicht moest worden vervuld. Harry Hoesstee onder de wapenen Lichting 1971-3, Staf Verzorging Batterij in ’t Harde. (En daar moet je de oorlog mee winnen ?)
 
 {{ image_2_column(
-  "https://images.unsplash.com/photo-1688118935892-b40fbf3b5e69?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
-  "https://images.unsplash.com/photo-1682695796954-bad0d0f59ff1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
-  "fullwidth"
+    "https://images.unsplash.com/photo-1688118935892-b40fbf3b5e69?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80",
+    "https://images.unsplash.com/photo-1682695796954-bad0d0f59ff1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDF8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+    "fullwidth"
 ) }}
 
 links boven: Studio aan de Scheppelweg in de Hoeve.
@@ -37,5 +37,5 @@ Harry Hoesstee heeft niet alleen als Dj en radioman zijn sporen verdiend maar oo
 Zo schoorde hij in 1994 een hit met Onze fiets is wieder da. en zelfs in 2004 een grote hit met Leaft onze oa
 ### Harry & de Beugels zorgen voor een superfeest
 
-Met hun grote hit: “Leaft oonze oale zoeplappe nog?” toeren ze door heel Overijsel en de Achterhoek. Overal waar ze optreden is het een half uur groot feest. Naast de bekende hit brengen ze nu een compleet programma waarbij het feestgehalte 100% is. Ook verschijnen ze op veel radio en tv stations. Ook Groningen heeft Harry en de Beugels inmiddels ontdekt, en Nederland zal de komende tijd nog veel van ze horen!
+Met hun grote hit “Leaft oonze oale zoeplappe nog?” toeren ze door heel Overijsel en de Achterhoek. Overal waar ze optreden is het een half uur groot feest. Naast de bekende hit brengen ze nu een compleet programma waarbij het feestgehalte 100% is. Ook verschijnen ze op veel radio en tv stations. Ook Groningen heeft Harry en de Beugels inmiddels ontdekt, en Nederland zal de komende tijd nog veel van ze horen!
 Het Management van Harry & De Beugels is in handen van Rosita muziekorganisatie. Voor info kunt u bellen met 053 5726677 of mailen naar info@rosita.nl.
