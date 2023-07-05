@@ -164,14 +164,6 @@ article.post {
     background-blend-mode: overlay;
     margin-inline: unset;
 
-    & > * {
-        align-items: center;
-    }
-
-    &__image {
-        align-items: center;
-    }
-
     &__content {
         color: var(--clr-secondary);
         padding: clamp(2em, 10dvw, 5em) clamp(3em, 11dvw, 6em);
