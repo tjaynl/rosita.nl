@@ -1,0 +1,13 @@
+---
+title: Blog
+description:
+image: /img/joel-muniz-XqXJJhK-c08-unsplash.jpg
+menu:
+    visible: true
+    order: 3
+    title: Blog
+sort_by: date
+---
+
+{% set posts = search.pages("type=post", sort_by + "=desc") %}
+{%- include "templates/postsList.njk" -%}
