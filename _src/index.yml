@@ -1,6 +1,5 @@
 layout: layouts/landing.njk
-templateEngine: njk,md
-title: Home
+title: Radio Rosita de radio zender voor Twente en omstreken!
 
 header:
     title: Luister en geniet met Radio Rosita!
