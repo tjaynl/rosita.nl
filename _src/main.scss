@@ -166,7 +166,7 @@ article.post {
 
     &__content {
         color: var(--clr-secondary);
-        padding: clamp(2em, 10dvw, 5em) clamp(3em, 11dvw, 6em);
+        padding-block: clamp(2em, 10dvw, 5em);
 
         h1 {
             font-size: var(--fs-800);
