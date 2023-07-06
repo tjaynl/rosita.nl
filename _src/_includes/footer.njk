@@ -1,0 +1,19 @@
+<footer class="[ footer ] [ region row fullwidth ]">
+    <div>
+        <p>&copy; copyright 2023 Radio Rosita</p>
+    </div>
+</footer>
+<script type="module" src="/js/main.js"></script>
+{% if has_admin %}
+<script>
+    if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+            if (!user) {
+                window.netlifyIdentity.on("login", () => {
+                    document.location.href = "/admin/";
+                });
+            }
+        });
+    }
+</script>
+{% endif %}
