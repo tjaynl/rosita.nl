@@ -30,7 +30,7 @@ Tevens bij alle zomerfeesten in de weide omtrek.
 1994 Onze fiets is wieder da eerste Hit voor Harry Hoesstee waar mee hij, door heel nederland trok om optredens te verzorgen.
 
 Harry Hoesstee heeft niet alleen als Dj en radioman zijn sporen verdiend maar ook als partime (zanger).
-Zo schoorde hij in 1994 een hit met Onze fiets is wieder da. en zelfs in 2004 een grote hit met Leaft onze oa
+Zo schoorde hij in 1994 een hit met Onze fiets is wieder da. en zelfs in 2004 een grote hit met Leaft onze oa.
 
 ### Harry & de Beugels zorgen voor een superfeest
 
