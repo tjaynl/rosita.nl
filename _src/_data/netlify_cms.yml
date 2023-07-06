@@ -10,6 +10,15 @@ collections:
   - label: "Pages"
     name: "pages"
     files:
+      - label: "Home Page"
+        name: "frontpage"
+        file: "_src/index.yml"
+        fields:
+          - { label: "Hero Title", name: "header.title", widget: "string" }
+          - { label: "Hero intro", name: "header.intro", widget: "markdown" }
+          - { label: "About Title", name: "about.title", widget: "string" }
+          - { label: "About intro", name: "about.description", widget: "markdown" }
+          - { label: "About image", name: "about.image", widget: "image" }
       - label: "About Page"
         name: "about"
         file: "_src/_includes/content/about.md"
