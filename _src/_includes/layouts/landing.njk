@@ -1,11 +1,11 @@
 ---
 layout: ./base.njk
-templateEngine: njk, md
+templateEngine: [njk, md]
 ---
 <section class="hero [ region fullwidth ]">
     <div class="hero__content flow">
         <h1>{{ header.title | safe }}</h1>
-        {{ header.intro | safe }}
+        {{ header.intro | md }}
     </div>
 </section>
 <section class="[ row fullwidth ]">
@@ -17,7 +17,7 @@ templateEngine: njk, md
     <div class="auto-grid" data-layout="halfs">
         <div class="about__content flow">
             <h2>{{ about.title | safe }}</h2>
-            {{ about.description | safe }}
+            {{ about.description | md }}
             <a href="/about" class="button primary">Lees meer</a>
         </div>
         <div class="about__image">
