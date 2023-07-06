@@ -21,7 +21,7 @@ collections:
           - { label: "About image", name: "about.image", widget: "image" }
       - label: "About Page"
         name: "about"
-        file: "_src/about.md"
+        file: "_src/_includes/content/page/about.md"
         fields:
           - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/base.njk" }
           - { label: "Title", name: "title", widget: "string" }
