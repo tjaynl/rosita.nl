@@ -14,18 +14,34 @@ collections:
         name: "frontpage"
         file: "_src/index.yml"
         fields:
-          - { label: "Hero Title", name: "header.title", widget: "string" }
-          - { label: "Hero intro", name: "header.intro", widget: "markdown" }
-          - { label: "About Title", name: "about.title", widget: "string" }
-          - { label: "About intro", name: "about.description", widget: "markdown" }
-          - { label: "About image", name: "about.image", widget: "image" }
+          - label: "Hero"
+            name: "hero"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Intro", name: "intro", widget: "markdown" }
+          - label: "About"
+            name: "about"
+            widget: "object"
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Intro", name: "intro", widget: "markdown" }
+              - { label: "Image", name: "image", widget: "image" }
       - label: "About Page"
         name: "about"
-        file: "/content/page/about.md"
+        file: "_src/about.md"
         fields:
-          - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/base.njk" }
+          - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/about.njk" }
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Body", name: "content", widget: "markdown" }
+          - { label: "Description", name: "description", widget: "markdown" }
+          - label: Menu Settings
+            name: menu
+            widget: object
+            fields:
+              - { label: "Menu visible", name: "visible", widget: "boolean", default: true }
+              - { label: "Menu order", name: "order", widget: "number", default: 2 }
+              - { label: "Menu title", name: "title", widget: "string" }
+          - { label: "Body", name: "body", widget: "markdown" }
 
   - label: "Events" # Used in the UI
     name: "event" # Used in routes, e.g., /admin/collections/event
