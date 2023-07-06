@@ -176,7 +176,7 @@ article.post {
 
 .about {
     
-    .auto-grid {
+    > .auto-grid {
         align-items: center;
         gap: var(--space-xl);
     }
