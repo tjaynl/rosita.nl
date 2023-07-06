@@ -1,5 +1,4 @@
 layout: layouts/landing.njk
-templateEngine: [njk, md]
 title: Radio Rosita de radio zender voor Twente en omstreken!
 has_admin: true
 
