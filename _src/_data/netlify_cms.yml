@@ -21,9 +21,11 @@ collections:
           - { label: "About image", name: "about.image", widget: "image" }
       - label: "About Page"
         name: "about"
-        file: "_src/_includes/content/pages/about.md"
+        file: "_src/about.md"
         fields:
-          - { label: "Body", name: "body", widget: "markdown" }
+          - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/base.njk" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Body", name: "content", widget: "markdown" }
 
   - label: "Events" # Used in the UI
     name: "event" # Used in routes, e.g., /admin/collections/event
