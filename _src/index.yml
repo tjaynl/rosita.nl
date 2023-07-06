@@ -1,0 +1,12 @@
+layout: layouts/landing.njk
+templateEngine: njk,md
+title: Home
+
+header:
+    title: Luister en geniet met Radio Rosita!
+    intro: Al decenia lang leveren wij vele mensen in twenten en omgeving de lokale hits.
+
+about:
+    title: Hoe Rosita is begonnen
+    description: Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat magnam hic sit. Inventore est reprehenderit, totam dolorem unde delectus voluptas ratione consequuntur. Quibusdam, nesciunt nobis doloremque harum amet quos incidunt?
+    image: /static/img/about-img.webp
