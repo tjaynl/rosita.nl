@@ -1,7 +1,6 @@
 ---
 layout: layouts/base.njk
 templateEngine: njk, md
-bodyClass: about
 title: Over Radio Rosita
 menu:
     visible: true
@@ -18,4 +17,4 @@ menu:
     </div>
 </section>
 
-{{ body | md | safe }}
+{{ include "/content/pages/about.md" }}
