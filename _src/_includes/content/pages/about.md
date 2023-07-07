@@ -1,9 +1,4 @@
 ---
-layout: layouts/about.njk
-menu:
-  visible: true
-  title: Over Rosita
-  order: 2
 title: Over Radio Rosita
 description: Over Radio Rosita
 ---

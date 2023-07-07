@@ -29,18 +29,10 @@ collections:
               - { label: "Image", name: "image", widget: "image" }
       - label: "About Page"
         name: "about"
-        file: "_src/about.md"
+        file: "_src/_includes/content/pages/about.md"
         fields:
-          - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/about.njk" }
           - { label: "Title", name: "title", widget: "string" }
-          - { label: "Description", name: "description", widget: "markdown" }
-          - label: Menu Settings
-            name: menu
-            widget: object
-            fields:
-              - { label: "Menu visible", name: "visible", widget: "boolean", default: true }
-              - { label: "Menu order", name: "order", widget: "number", default: 2 }
-              - { label: "Menu title", name: "title", widget: "string" }
+          - { label: "Description", name: "description", widget: "text" }
           - { label: "Body", name: "body", widget: "markdown" }
 
   - label: "Events" # Used in the UI
