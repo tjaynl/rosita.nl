@@ -8,7 +8,6 @@ backend:
     delete: Delete {{collection}} “{{slug}}”
     uploadMedia: Upload “{{path}}”
     deleteMedia: Delete “{{path}}”
-    openAuthoring: '{{message}}'
 
 publish_mode: editorial_workflow
 
@@ -16,12 +15,39 @@ media_folder: "_site/static/img/uploads"
 public_folder: "/img/uploads"
 
 collections:
+  - name: 'settings'
+    label: 'Settings'
+    delete: false # Prevent users from deleting documents in this collection
+    editor:
+      preview: false
+    files:
+      - name: 'general'
+        label: 'Site Settings'
+        file: '_src/_data/site.yml'
+        description: 'General Site Settings'
+        fields:
+          - { label: 'Global title', name: 'title', widget: 'string' }
+          - { label: "Global description", name: "description", widget: "text" }
+          - { label: "Stream Source", name: "audio_source", widget: "string"}
+          - { label: "Logo", name: "logo", widget: "image", default: "/img/logo.svg" }
+          - label: 'Post Settings'
+            name: posts
+            widget: 'object'
+            fields:
+              - {
+                  label: 'Number of posts on frontpage',
+                  name: front_limit,
+                  widget: number,
+                  min: 1,
+                  max: 10,
+                }
+
   - label: "Pages"
     name: "pages"
     files:
       - label: "Landing Page"
         name: "landing"
-        file: "/index.yml"
+        file: "_src/index.yml"
         fields:
           - label: "Hero"
             name: "hero"
@@ -39,7 +65,7 @@ collections:
 
       - label: "About Page"
         name: "about"
-        file: "/content/pages/about.md"
+        file: "_src/content/pages/about.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Description", name: "description", widget: "text" }
@@ -47,14 +73,25 @@ collections:
 
   - label: "Blog" #  Used in the UI
     name: "blog" # Used in routes, e.g., /admin/collections/blog
-    folder: "/blog" # The path to the folder where the documents are stored
+    folder: "_src/blog" # The path to the folder where the documents are stored
     description: "Create or edit blog posts"
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
-      - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/blog-post.njk" }
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Publish Date", name: "date", widget: "datetime" }
-      - { label: "Featured Image", name: "thumbnail", widget: "image", required: false }
-      - {label: "Tags", name: "tags", widget: "array"}
-      - { label: "Body", name: "body", widget: "markdown" }
+    fields: # The fields each document in this collection have
+      - { label: 'Title', name: 'title', widget: 'string', tagname: 'h1' }
+      - { label: 'Draft', name: 'draft', widget: 'boolean', default: false }
+      - {
+          label: 'Publish Date',
+          name: 'date',
+          widget: 'datetime',
+          date_format: 'YYYY-MM-DD',
+          time_format: 'HH:mm',
+          format: 'YYYY-MM-DD HH:mm',
+        }
+      - label: 'Cover Image'
+        name: 'image'
+        widget: 'image'
+        required: false
+        tagname: ''
+
+      - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Main content goes here.' }
