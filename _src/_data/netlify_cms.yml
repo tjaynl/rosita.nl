@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: cms
+  branch: main
   # repo: tjaynl/rosita.nl
   commit_messages:
     create: Create {{collection}} “{{slug}}”
