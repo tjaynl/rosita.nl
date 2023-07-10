@@ -1,0 +1,15 @@
+.post__header {
+    max-height: 45vmin;
+    height: 45dvh;
+
+    &--image {
+        height: auto;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        overflow: hidden;
+        transform: translateY(-50%);
+        transition: opacity ease-in-out;
+    }
+}

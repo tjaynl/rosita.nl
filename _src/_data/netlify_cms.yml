@@ -1,17 +1,27 @@
 backend:
-  name: git-gateway
+  name: github
   repo: tjaynl/rosita.nl
-  branch: master # Branch to update (optional; defaults to master)
+  branch: master
+  open_authoring: true
+  commit_messages:
+    create: Create {{collection}} “{{slug}}”
+    update: Update {{collection}} “{{slug}}”
+    delete: Delete {{collection}} “{{slug}}”
+    uploadMedia: Upload “{{path}}”
+    deleteMedia: Delete “{{path}}”
+    openAuthoring: '{{message}}'
 
-media_folder: "static/img/uploads" # Media files will be stored in the repo under images/uploads
+publish_mode: editorial_workflow
+
+media_folder: "_site/static/img/uploads"
 public_folder: "/img/uploads"
 
 collections:
   - label: "Pages"
     name: "pages"
     files:
-      - label: "Home Page"
-        name: "frontpage"
+      - label: "Landing Page"
+        name: "landing"
         file: "_src/index.yml"
         fields:
           - label: "Hero"
@@ -19,7 +29,7 @@ collections:
             widget: "object"
             fields:
               - { label: "Title", name: "title", widget: "string" }
-              - { label: "Intro", name: "intro", widget: "markdown" }
+              - { label: "Intro", name: "intro", widget: "text" }
           - label: "About"
             name: "about"
             widget: "object"
@@ -27,28 +37,16 @@ collections:
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Intro", name: "intro", widget: "markdown" }
               - { label: "Image", name: "image", widget: "image" }
+
       - label: "About Page"
         name: "about"
-        file: "_src/_includes/content/pages/about.md"
+        file: "_src/content/pages/about.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Description", name: "description", widget: "text" }
           - { label: "Body", name: "body", widget: "markdown" }
 
-  - label: "Events" # Used in the UI
-    name: "event" # Used in routes, e.g., /admin/collections/event
-    folder: "_src/events/" # The path to the folder where the documents are stored
-    description: "Create or edit events"
-    create: true # Allow users to create new documents in this collection
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
-    fields: # The fields for each document, usually in front matter
-      - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/event.njk" }
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Event Date", name: "date", widget: "datetime" }
-      - { label: "Event Image", name: "thumbnail", widget: "image" }
-      - { label: "Body", name: "body", widget: "markdown" }
-
-  - label: "Blog" # Used in the UI
+  - label: "Blog" #  Used in the UI
     name: "blog" # Used in routes, e.g., /admin/collections/blog
     folder: "_src/blog/" # The path to the folder where the documents are stored
     description: "Create or edit blog posts"
@@ -58,5 +56,5 @@ collections:
       - { label: "Layout", name: "layout", widget: "hidden", default: "layouts/blog-post.njk" }
       - { label: "Title", name: "title", widget: "string" }
       - { label: "Post Date", name: "date", widget: "datetime" }
-      - { label: "Featured Image", name: "thumbnail", widget: "image" }
+      - { label: "Featured Image", name: "thumbnail", widget: "image", required: false }
       - { label: "Body", name: "body", widget: "markdown" }

@@ -2,10 +2,10 @@
 layout: layouts/base.njk
 ---
 
-<header class="hero [ row fullwidth ]">
-    <div>
-        
+<section class="[ hero ] [ region fullwidth ]">
+    <div class="hero__content">
+        <h1 class="text-center">{{ title }}</h1>
     </div>
-</header>
+</section>
 
-{{- content | njk | md | safe -}}
+{{ content | njk | md | safe }}

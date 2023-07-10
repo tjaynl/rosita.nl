@@ -1,0 +1,16 @@
+@use "sass:map";
+@use "cycle" as *;
+
+@mixin generate-utility-classes($map) {
+    @include cycle($map, "", false);
+
+    @each $key, $value in map-get($map, "breakpoints") {
+
+        $prefix: #{$key + "\\:"};
+        $has-breakpoint: true;
+
+        @media #{$value} {
+            @include cycle($map, $prefix, $has-breakpoint);
+        }
+    }
+}

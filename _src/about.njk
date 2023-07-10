@@ -1,19 +1,19 @@
 ---
-layout: layouts/base.njk
+layout: layouts/page.njk
+title: Over Radio Rosita
 templateEngine: [njk, md]
+bodyClass: about
 menu:
     visible: true
     title: Over Rosita
     order: 2
 ---
 {% from "macros.njk" import image_2_column %}
-<section class="hero [ region row fullwidth ]">
-    <div class="hero__image">
-        <div class="hero__content flow">
-            <h1 class="text--center">{{ title }}</h1>
-        </div>
+
+<section class="[ hero ] [ region fullwidth ]">
+    <div class="hero__content flow">
+        <h1 class="text-center">{{ title }}</h1>
     </div>
 </section>
-<div class="wrapped-content flow region">
-    {% include "content/pages/about.md" %}
-</div>
+
+{% include "./content/pages/about.md" %}

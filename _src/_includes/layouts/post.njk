@@ -2,32 +2,30 @@
 layout: layouts/base.njk
 ---
 
-<header class="post__header">
-    <div class="post__header--image">
-        <img src="{{ image | url }}" alt="" no-resize />
+<section class="[ post__header ] [ fullwidth ]">
+    <div >
+        <img class="post__header--image" src="{{ thumbnail | url }}" alt=""/>
     </div>
-</header>
+</section>
 
-<article class="[ post ] [ fullwidth ] [ flow ]">
-    {{- content | safe -}}
+<article class="post flow">
+    {{ content | safe }}
 </article>
 
-<section>
-
+<section class="fullwidth">
     {%- set previousItem = search.previousPage(url, "type=" + type, sort_by) %}
     {%- if previousItem -%}
-    <a data-animate="from-left" style="text-decoration: none;" href="{{ previousItem.data.url | url }}" class="left">
-        <div class="subtext">Previous</div>
-        <h3>{{ previousItem.data.title }}</h3>
-    </a>
+        <a data-animate="from-left" style="text-decoration: none;" href="{{ previousItem.data.url | url }}" class="left">
+            <div class="subtext">Previous</div>
+            <h3>{{ previousItem.data.title }}</h3>
+        </a>
     {%- endif -%}
 
     {%- set nextItem = search.nextPage(url, "type=" + type, sort_by) %}
     {%- if nextItem -%}
-    <a data-animate="from-right" style="text-decoration: none;" href="{{ nextItem.data.url | url }}" class="right">
-        <div class="subtext">Next</div>
-        <h3>{{ nextItem.data.title }}</h3>
-    </a>
+        <a data-animate="from-right" style="text-decoration: none;" href="{{ nextItem.data.url | url }}" class="right">
+            <div class="subtext">Next</div>
+            <h3>{{ nextItem.data.title }}</h3>
+        </a>
     {%- endif -%}
-
 </section>

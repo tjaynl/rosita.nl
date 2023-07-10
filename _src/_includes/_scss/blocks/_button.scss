@@ -1,0 +1,14 @@
+//
+// 
+//
+
+.button {
+    display: inline-block;
+    padding: var(--space-xs) var(--space-md);
+    color: var(--button-color, #fff);
+    background-color: var(--button-bgcolor, #007bff);
+
+    &:hover {
+        background-color: darken(var(--button-bgcolor), 10%);
+    }
+}

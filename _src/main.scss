@@ -1,8 +1,8 @@
 // -----------------------------------------------------------------------------
 // MBMCSS
 // -----------------------------------------------------------------------------
-@use "scss/mbmcss/config" as *;
-@use "scss/mbmcss/mixins/index" as mixin;
+@use "_scss/config" as *;
+@use "_scss/mbmcss/mixins/index" as mixin;
 
 // Vars
 $settings: $mbm-config;
@@ -14,29 +14,18 @@ $css-vars: map-get($settings, "css-vars");
 // Utility classes
 @include mixin.generate-utility-classes($settings);
 
+
 // -----------------------------------------------------------------------------
-// Import reset
+// RESET
 // -----------------------------------------------------------------------------
 
-@import "scss/reset";
+@import "_scss/reset";
 
 
 
-/* -----------------------------------------------------------------------------
- * CSS Globals
- * -------------------------------------------------------------------------- */
-
-*,
-*::before,
-*::after {
-    box-sizing: border-box;
-}
-
-* {
-    margin: 0;
-}
-
-
+// -----------------------------------------------------------------------------
+// GLOBAL
+// -----------------------------------------------------------------------------
 
 html {
     color-scheme: light dark;
@@ -47,24 +36,16 @@ html {
 body {
     background-color: var(--clr-surface);
     color: var(--clr-text);
-    font-size: var(--fs-300);
     font-family: var(--ff-base);
+    font-size: var(--fs-300);
     line-height: 1.6;
 }
 
 
 
-p,
-li,
-blockquote:not([class]) {
-    max-width: var(--wrap-width, 65ch);
-}
-
-
-
-/* -----------------------------------------------------------------------------
- * Headings
- * -------------------------------------------------------------------------- */
+// -----------------------------------------------------------------------------
+// TYPOGRAPHY
+// -----------------------------------------------------------------------------
 
 h1,
 h2,
@@ -72,7 +53,7 @@ h3,
 h4 {
     font-family: var(--ff-accent);
     font-weight: 900;
-    line-height: 1.2;
+    line-height: 1.1;
     text-wrap: balance;
 }
 
@@ -93,18 +74,28 @@ h3 {
 
 
 
-/* -----------------------------------------------------------------------------
- * Compositions
- * -------------------------------------------------------------------------- */
+// p,
+// li,
+// blockquote:not([class]) {
+//     max-width: var(--wrap-width, 65ch);
+// }
 
-@import "scss/compositions/index";
 
-.page,
-.row {
+
+
+
+// -----------------------------------------------------------------------------
+// COMPOSITIONS
+// -----------------------------------------------------------------------------
+
+@import "_scss/compositions/index";
+
+
+.page {
     display: grid;
     grid-template-columns: var(--grid-page);
 
-    & > * {
+    &>* {
         grid-column: var(--grid-page-main);
     }
 
@@ -113,60 +104,53 @@ h3 {
     }
 }
 
-
-
 .wrapped-content,
 article.post {
-    & > * {
+    &>* {
         max-width: 54rem;
-        margin-inline: auto;
-        padding-inline: var(--space-xs);
+        margin-left: auto;
+        margin-right: auto;
+        padding-inline: 1rem;
 
         &.fullwidth,
         &.bleed {
             max-width: unset;
+            width: 100%;
             padding-inline: 0;
         }
     }
 }
 
-.img-2-col {
-    --region-space: var(--space-xl-2xl);
-}
 
 
 
-/* -----------------------------------------------------------------------------
- * Utilities
- * -------------------------------------------------------------------------- */
 
-@import "scss/utilities/index";
+// -----------------------------------------------------------------------------
+// UTILITIES
+// -----------------------------------------------------------------------------
 
-.text--center {
-    text-align: center; 
-}
-
-.section-bg {
-    background-color: var(--clr-primary);
-}
+@import "_scss/utilities/index";
 
 
 
-/* -----------------------------------------------------------------------------
- * Blocks
- * -------------------------------------------------------------------------- */
 
-@import "scss/blocks/index";
+
+// -----------------------------------------------------------------------------
+// BLOCKS
+// -----------------------------------------------------------------------------
+
+@import "_scss/blocks/index";
 
 .hero {
     background: var(--clr-primary) url("/static/img/hero-img.webp") no-repeat center center;
     background-size: cover;
     background-blend-mode: overlay;
-    margin-inline: 0 !important;
 
     &__content {
+        max-width: 77.5em;
+        margin-inline: auto;
+        padding: clamp(2em, 10dvw, 5em) clamp(3em, 10dvw, 11em);
         color: var(--clr-secondary);
-        padding-block: clamp(2em, 10dvw, 5em);
 
         h1 {
             font-size: var(--fs-800);
@@ -174,9 +158,10 @@ article.post {
     }
 }
 
-#about {
-    
-    > .auto-grid {
+
+
+.about {
+    .auto-grid {
         align-items: center;
         gap: var(--space-xl);
     }
@@ -185,37 +170,5 @@ article.post {
         img {
             border-radius: 1em;
         }
-    }
-}
-.footer {
-    --region-space: var(--space-lg);
-}
-
-
-
-
-// =============================================================
-
-@media(prefers-color-scheme: dark) {
-    .site-nav__link {
-        --clr-link: var(--clr-surface);
-    }
-
-    .hamburger-menu {
-        --foreground: var(--clr-surface);
-    }
-
-    .navbar.has-background .site-nav__link ,
-    .navbar.active .site-nav__link  {
-        --clr-link: var(--clr-text);
-    }
-
-    .navbar.has-background .hamburger-menu,
-    .navbar.active .hamburger-menu {
-        --foreground: var(--clr-text);
-    }
-
-    .site-nav.active  site-nav__link {
-        --clr-link: var(--clr-text);
     }
 }

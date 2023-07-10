@@ -1,0 +1,29 @@
+// -----------------------------------------------------------------------------
+// Auto Grid
+// -----------------------------------------------------------------------------
+
+.auto-grid,
+.img-grid {
+    display: grid;
+    grid-template-columns: repeat(
+        var(--grid-placement, auto-fill),
+        minmax(var(--min-col-size, 22rem), 1fr)
+    );
+}
+
+// -----------------------------------------------------------------------------
+// Auto Grid data-layouts
+// -----------------------------------------------------------------------------
+
+.auto-grid,
+.img-grid  {
+    &[data-layout="halfs"] {
+        --grid-placement: auto-fit;
+        --min-col-size: clamp(16rem, 50vw, 26rem);
+    }
+
+    &[data-layout="thirds"] {
+        --grid-placement: auto-fit;
+        --min-col-size: clamp(16rem, 33.33%, 20rem);
+    }
+}

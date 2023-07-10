@@ -1,0 +1,123 @@
+.navbar {
+    position: relative;
+    padding: var(--space-xs) var(--space-md);
+
+    &__inner {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__logo {
+        order: 0;
+        margin: 0;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+    }
+
+    &.fixed {
+        position: fixed;
+        width: 100%;
+        z-index: 99999;
+    }
+
+    &.has-background,
+    &.active {
+        background-color: var(--clr-surface);
+    }
+}
+
+.site-nav {
+    display: none;
+    width: 100%;
+    order: 3;
+
+    &__list {
+        font-size: var(--fs-200);
+        padding: 0;
+        margin: 0;
+    }
+
+    &__item {
+        padding: var(--space-2xs) var(--space-xs);
+        max-width: unset;
+    }
+
+    &__link {
+        color: var(--clr-link, var(--clr-text));
+        display: block;
+        position: relative;
+        text-decoration: none;
+        padding-block: var(--space-3xs);
+        font-weight: 600;
+        text-transform: uppercase;
+
+        &::before {
+            position: absolute;
+            content: "";
+            width: 35%;
+            border: 1px solid var(--clr-link, var(--clr-text));
+            bottom: 0;
+            transition: width 300ms ease-in-out;
+        }
+
+        &:hover::before {
+            --clr-link: var(--clr-primary);
+            width: 100%;
+        }
+
+        &[aria-current="page"] {
+            color: var(--clr-link);
+            font-weight: 700;
+            
+            &::before {
+                width: 100%;
+                border-color: var(--clr-primary);
+            }
+        }
+    }
+}
+
+.site-nav.active {
+    display: block;
+    background-color: var(--clr-surface);
+}
+
+@media screen and (min-width: 50rem) {
+    .site-nav {
+        display: block;
+        width: auto;
+
+        &__list {
+            display: flex;
+            gap: var(--space-s);
+        }
+    }
+}
+
+
+@media(prefers-color-scheme: dark) {
+    .site-nav__link {
+        --clr-link: var(--clr-surface);
+    }
+
+    .hamburger-menu {
+        --foreground: var(--clr-surface);
+    }
+
+    .navbar.has-background .site-nav__link ,
+    .navbar.active .site-nav__link  {
+        --clr-link: var(--clr-text);
+    }
+
+    .navbar.has-background .hamburger-menu,
+    .navbar.active .hamburger-menu {
+        --foreground: var(--clr-text);
+    }
+
+    .site-nav.active  site-nav__link {
+        --clr-link: var(--clr-text);
+    }
+}

@@ -1,8 +1,7 @@
 ---
-layout: layouts/base.njk
-title: Blog
-description:
-image: /img/joel-muniz-XqXJJhK-c08-unsplash.jpg
+layout: layouts/hero.njk
+title: Radio Rosita Blog
+description: Blijf up to date met de laatste posts.
 menu:
     visible: true
     order: 3
@@ -10,5 +9,7 @@ menu:
 sort_by: date
 ---
 
-{% set posts = search.pages("type=post", sort_by + "=desc") %}
-{%- include "templates/postsList.njk" -%}
+<section class="wrapper">
+    {% set posts = search.pages("type=post", sort_by + "=desc") %}
+    {%- include "templates/postsList.njk" -%}
+</section>

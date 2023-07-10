@@ -1,6 +1,7 @@
 metas:
-  site: Radio Rosita
+  title: =title
+  description: =description
   twitter: "@radiorosita"
-  icon: /img/station-avatar.png
+  icon: static/images/og-img.png
   lang: nl
   generator: true

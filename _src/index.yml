@@ -2,13 +2,12 @@ layout: layouts/landing.njk
 title: Radio Rosita de radio zender voor Twente en omstreken!
 hero:
   title: Luister en geniet met Radio Rosita!
-  intro: |
-    Al decenia lang leveren wij vele mensen in twenten en omgeving de
-    lokale hits. Je kan wel stellen dat Radio Rosita een waar begrip is in de
-    omgeving.
+  intro: >
+    Al decenia lang verzorgen wij de laatste hits in Twenten. Je kan wel stellen
+    dat Radio Rosita een waar begrip is in Twenten en omgeving.
 about:
   title: Hoe Rosita is begonnen
-  description: |
+  intro: |
     Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat
     magnam hic sit. Inventore est reprehenderit, totam dolorem unde delectus
     voluptas ratione consequuntur. Quibusdam, nesciunt nobis doloremque harum

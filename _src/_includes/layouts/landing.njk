@@ -1,27 +1,26 @@
 ---
 layout: layouts/base.njk
+bodyClass: landing
 templateEngine: [njk, md]
+landing: true
 ---
-<section class="hero [ region row fullwidth ]">
-    <div class="hero__content flow">
-        <h1>{{ hero.title | safe }}</h1>
+<section class="[ hero ] [ region fullwidth ]">
+    <div class="[ hero__content ] [ flow ]">
+        <h1>{{ hero.title }}</h1>
         {{ hero.intro | md | safe }}
     </div>
 </section>
-<section class="[ row fullwidth ]">
-    <div>
-        {% comp "Player" %}{% endcomp %}
-    </div>
+<section class="[ wrapper ]">
+    {% comp "Player" %}{% endcomp %}
 </section>
-<section id="about" class="about [ region row fullwidth ]">
+<section id="about" class="[ about ] [ region ] [ wrapper ]">
     <div class="auto-grid" data-layout="halfs">
-        <div class="about__content flow">
+        <div class="[ about__content ] [ flow ]">
             <h2>{{ about.title | safe }}</h2>
-            {{- about.intro | md | safe -}}
-            <a href="/about" class="button primary">Lees meer</a>
+            {{ about.intro | md | safe }}
         </div>
         <div class="about__image">
-            <img src="{{ about.image | url }}" alt=""></div>
+            <img src="{{ about.image | url }}" alt="" />
         </div>
     </div>
 </section>

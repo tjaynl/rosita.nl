@@ -1,0 +1,9 @@
+.card {
+    background-color: var(clr--secondary);
+
+    &__image {}
+
+    &__content {
+        padding: var(--space-md);
+    }
+}
