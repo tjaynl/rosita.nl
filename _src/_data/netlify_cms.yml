@@ -1,8 +1,7 @@
 backend:
-  name: github
-  repo: tjaynl/rosita.nl
+  name: git-gateway
   branch: master
-  open_authoring: true
+  # repo: tjaynl/rosita.nl
   commit_messages:
     create: Create {{collection}} “{{slug}}”
     update: Update {{collection}} “{{slug}}”
