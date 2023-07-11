@@ -74,7 +74,6 @@ collections:
   - label: "Blog" #  Used in the UI
     name: "blog" # Used in routes, e.g., /admin/collections/blog
     folder: "_src/blog" # The path to the folder where the documents are stored
-    path: "{{slug}}/"
     media_folder: ''
     public_folder: ''
     description: "Create or edit blog posts"
