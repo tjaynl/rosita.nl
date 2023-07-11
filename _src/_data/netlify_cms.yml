@@ -74,8 +74,7 @@ collections:
   - label: "Blog" #  Used in the UI
     name: "blog" # Used in routes, e.g., /admin/collections/blog
     folder: "_src/blog" # The path to the folder where the documents are stored
-    media_folder: ''
-    public_folder: ''
+    path: "{{slug}}/index"
     description: "Create or edit blog posts"
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
