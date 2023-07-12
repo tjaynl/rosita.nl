@@ -1,5 +1,6 @@
 import lume from "lume/mod.ts";
 import basePath from "lume/plugins/base_path.ts";
+import date from "lume/plugins/date.ts";
 import imagick from "lume/plugins/imagick.ts";
 import inline from "lume/plugins/inline.ts";
 import esbuild from "lume/plugins/esbuild.ts";
@@ -30,6 +31,11 @@ site
     }))
     .use(metas())
     .use(basePath())
+    .use(date({
+        formats: {
+            "MY_FORMAT": "dd-MM-yyyy",
+        },
+    }))
     .use(netlify_cms())
 
 export default site;

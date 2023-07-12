@@ -15,27 +15,27 @@ media_folder: "_src/static/img/"
 public_folder: "/img"
 
 collections:
-  - name: 'settings'
-    label: 'Settings'
+  - name: "settings"
+    label: "Settings"
     delete: false # Prevent users from deleting documents in this collection
     editor:
       preview: false
     files:
-      - name: 'general'
-        label: 'Site Settings'
-        file: '_src/_data/site.yml'
-        description: 'General Site Settings'
+      - name: "general"
+        label: "Site Settings"
+        file: "_src/_data/site.yml"
+        description: "General Site Settings"
         fields:
-          - { label: 'Global title', name: 'title', widget: 'string' }
+          - { label: "Global title", name: "title", widget: "string" }
           - { label: "Global description", name: "description", widget: "text" }
           - { label: "Stream Source", name: "audio_source", widget: "string"}
-          - { label: "Logo", name: "logo", widget: "image", default: "/img/logo.svg" }
-          - label: 'Post Settings'
+          - { label: "Logo", name: "logo", widget: "image", default: "/static/img/logo.svg" }
+          - label: "Post Settings"
             name: posts
-            widget: 'object'
+            widget: "object"
             fields:
               - {
-                  label: 'Number of posts on frontpage',
+                  label: "Number of posts on frontpage",
                   name: front_limit,
                   widget: number,
                   min: 1,
@@ -79,19 +79,25 @@ collections:
     create: true # Allow users to create new documents in this collection
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}" # Filename template, e.g., YYYY-MM-DD-title.md
     fields: # The fields each document in this collection have
-      - { label: 'Title', name: 'title', widget: 'string', tagname: 'h1' }
-      - { label: 'Draft', name: 'draft', widget: 'boolean', default: false }
+      - { label: "Title", name: "title", widget: "string", tagname: "h1" }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false }
       - {
-          label: 'Publish Date',
-          name: 'date',
-          widget: 'datetime',
-          date_format: 'YYYY-MM-DD',
-          time_format: 'HH:mm',
-          format: 'YYYY-MM-DD HH:mm',
+          label: "Publish Date",
+          name: "date",
+          widget: "datetime",
+          date_format: "DD.MM.YYYY",
+          time_format: "HH:mm",
+          format: "YYYY-MM-DD HH:mm",
         }
-      - label: 'Cover Image'
-        name: 'cover_image'
-        widget: 'image'
+      - label: "Cover Image"
+        name: "cover_image"
+        widget: "image"
         required: false
-        tagname: ''
-      - { label: 'Body', name: 'body', widget: 'markdown', hint: 'Main content goes here.' }
+        tagname: ""
+      - label: "Tags"
+        name: "tags"
+        widget: "list"
+        summary: "{{fields.name}}"
+        fields: 
+          - {label: "Name", name: "name", widget: "string"}
+      - { label: "Body", name: "body", widget: "markdown", hint: "Main content goes here." }

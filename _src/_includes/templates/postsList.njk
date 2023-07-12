@@ -6,6 +6,11 @@
     </div>
     <div class="[ card__content ] [ flow ]">
         <h3>{{ post.data.title }}</h3>
+        <div>
+            <small>
+                {{ date | date('MY_FORMAT') }}
+            </small>
+        </div>
     </div>
     </a>
 </article>

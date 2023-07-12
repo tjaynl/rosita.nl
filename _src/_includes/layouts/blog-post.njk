@@ -3,11 +3,14 @@ layout: layouts/post.njk
 ---
 
 {% import "macros.njk" as macros %}
-
-<div class="[ post-title ] [ region ]">
+<div class="[ post-title ] [ region flow ]">
     <h1>{{ title | safe }}</h1>
+    <div>
+        <time datetime="{{ date | date }}">{{ date | date('HUMAN_DATE') }}</time>
+        <div>
+            {% include "templates/tagsList.njk" %}
+        </div>
+    </div>
 </div>
-
 <hr>
-
 {{ content | safe }}
