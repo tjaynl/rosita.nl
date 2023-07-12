@@ -10,7 +10,7 @@ layout: layouts/base.njk
     {{ content | safe }}
 </article>
 
-<section class="fullwidth">
+<section class="region fullwidth">
     {%- set previousItem = search.previousPage(url, "type=" + type, sort_by) %}
     {%- if previousItem -%}
         <a data-animate="from-left" style="text-decoration: none;" href="{{ previousItem.data.url | url }}" class="left">
