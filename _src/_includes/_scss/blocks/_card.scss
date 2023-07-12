@@ -1,7 +1,11 @@
 .card {
-    background-color: var(clr--secondary);
+    background-color: var(--clr-secondary);
+    border-radius: 1em;
+    overflow: hidden;
 
-    &__image {}
+    &__image {
+    
+    }
 
     &__content {
         padding: var(--space-md);

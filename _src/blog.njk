@@ -10,6 +10,8 @@ sort_by: date
 ---
 
 <section class="wrapper">
-    {% set posts = search.pages("type=post", sort_by + "=desc") %}
-    {%- include "templates/postsList.njk" -%}
+    <div class="auto-grid" data-layout="thirds">
+        {% set posts = search.pages("type=post", sort_by + "=desc") %}
+        {%- include "templates/postsList.njk" -%}
+    </div>
 </section>

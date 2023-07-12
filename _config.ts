@@ -20,7 +20,6 @@ const site = lume(
 );
 
 site
-    .copy("svg", "./img/")
     .use(sass())
     .use(postcss())
     .use(inline())

@@ -142,7 +142,7 @@ article.post {
 @import "_scss/blocks/index";
 
 .hero {
-    background: var(--clr-primary) url("/static/img/hero-img.webp") no-repeat center center;
+    background: var(--clr-primary) url("/img/hero-img.webp") no-repeat center center;
     background-size: cover;
     background-blend-mode: overlay;
 
@@ -171,4 +171,9 @@ article.post {
             border-radius: 1em;
         }
     }
+}
+
+
+.post-title {
+    --region-space: 3.3vmax;
 }

@@ -1,6 +1,8 @@
 .post__header {
+    position: relative;
     max-height: 45vmin;
     height: 45dvh;
+    overflow: hidden;
 
     &--image {
         height: auto;
@@ -8,7 +10,7 @@
         position: absolute;
         top: 50%;
         left: 0;
-        overflow: hidden;
+        //overflow: hidden;
         transform: translateY(-50%);
         transition: opacity ease-in-out;
     }
