@@ -7,9 +7,6 @@ layout: layouts/post.njk
     <h1>{{ title | safe }}</h1>
     <div>
         <time datetime="{{ date | date }}">{{ date | date('HUMAN_DATE') }}</time>
-        <div>
-            {% include "templates/tagsList.njk" %}
-        </div>
     </div>
 </div>
 <hr>
