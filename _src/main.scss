@@ -185,18 +185,9 @@ body.blog {
     }
 }
 
-
-.post-title {
-    --region-space: 3.3vmax;
-}
-
-.post__nav {
-    display: flex;
-    justify-content: space-around;
-    padding-inline: var(--space-xl);
-
-    a.left,
-    a.right {
-        padding: var(--space-2xs) var(--space-md);
-    }
+.pill {
+    color: var(--txtcolor, white);
+    background-color: var(--bgcolor, #011c44 );
+    border-radius: 99em;
+    padding: var(--space-2xs) var(--space-xs);
 }

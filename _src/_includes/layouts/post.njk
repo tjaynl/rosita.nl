@@ -10,10 +10,10 @@ layout: layouts/base.njk
     {{ content | safe }}
 </article>
 
-<section class="flex region fullwidth">
+<section class="post__nav region fullwidth">
     {%- set previousItem = search.previousPage(url, "type=" + type, sort_by) %}
     {%- if previousItem -%}
-        <a data-animate="from-left" style="text-decoration: none;" href="{{ previousItem.data.url | url }}" class="left">
+        <a class="left" href="{{ previousItem.data.url | url }}">
             <div class="subtext">Previous</div>
             <h3>{{ previousItem.data.title }}</h3>
         </a>
@@ -21,7 +21,7 @@ layout: layouts/base.njk
 
     {%- set nextItem = search.nextPage(url, "type=" + type, sort_by) %}
     {%- if nextItem -%}
-        <a data-animate="from-right" style="text-decoration: none;" href="{{ nextItem.data.url | url }}" class="right">
+        <a class="right" href="{{ nextItem.data.url | url }}">
             <div class="subtext">Next</div>
             <h3>{{ nextItem.data.title }}</h3>
         </a>
