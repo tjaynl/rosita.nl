@@ -194,7 +194,8 @@ body.blog {
     display: flex;
     justify-content: space-around;
 
-    a {
+    a.left,
+    a.right {
         padding: var(--space-2xs) var(--space-md);
     }
 }
