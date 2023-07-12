@@ -189,3 +189,12 @@ body.blog {
 .post-title {
     --region-space: 3.3vmax;
 }
+
+.post__nav {
+    display: flex;
+    justify-content: space-around;
+
+    a {
+        padding: var(--space-2xs) var(--space-md);
+    }
+}
