@@ -193,6 +193,7 @@ body.blog {
 .post__nav {
     display: flex;
     justify-content: space-around;
+    padding-inline: var(--space-xl);
 
     a.left,
     a.right {
