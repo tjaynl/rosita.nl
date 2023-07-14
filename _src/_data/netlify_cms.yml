@@ -87,7 +87,7 @@ collections:
           widget: "datetime",
           date_format: "DD.MM.YYYY",
           time_format: "HH:mm",
-          format: "YYYY-MM-DD HH:mm",
+          format: "DD-MM-YYYY HH:mm",
         }
       - label: "Cover Image"
         name: "cover_image"
@@ -99,6 +99,6 @@ collections:
         widget: "list"
         summary: "{{fields.name}}"
         fields: 
-          - {label: "Name", name: "name", widget: "string"}
-      - { label: "Categorie", name: "categorie", widget: "string"}
+          - { label: "Name", name: "name", widget: "string" }
+      - { label: "Categorie", name: "categorie", widget: "string" }
       - { label: "Body", name: "body", widget: "markdown", hint: "Main content goes here." }
