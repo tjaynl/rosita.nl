@@ -74,6 +74,12 @@ h3 {
 
 
 
+small {
+    font-size: var(--fs-200);
+}
+
+
+
 // p,
 // li,
 // blockquote:not([class]) {
@@ -183,11 +189,4 @@ body.blog {
     .auto-grid {
         gap: var(--space-md);
     }
-}
-
-.pill {
-    color: var(--txtcolor, white);
-    background-color: var(--bgcolor, #011c44 );
-    border-radius: 99em;
-    padding: var(--space-2xs) var(--space-xs);
 }

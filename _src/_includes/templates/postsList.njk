@@ -1,17 +1,14 @@
-{%- for post in posts -%}
+{% for post in posts %}
 <article class="card">
     <a href="{{ post.data.url | url }}">
-    <div class="card__image">
-        <img src="{{ post.data.cover_image | url }}" alt=""/>
-    </div>
-    <div class="[ card__content ] [ flow ]">
-        <h3>{{ post.data.title }}</h3>
-        <div>
-            <small class="pill">
-                {{ date | date('MY_FORMAT') }}
-            </small>
+        <header class="card-header">
+            <span class="card-header-text">{{ post.data.categorie }}</span>
+            <img src="{{ post.data.cover_image | url }}" alt="" class="card-header-image"/>
+        </header>
+        <div class="card-body flow">
+            <h3 class="heading">{{ post.data.title }}</h3>
+            <small class="color-neutral-400">{{ date | date('MY_FORMAT') }}</small>
         </div>
-    </div>
     </a>
 </article>
-{%- endfor -%}
+{% endfor %}

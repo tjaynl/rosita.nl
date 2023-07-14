@@ -2,6 +2,7 @@
 title: This is my first post
 draft: false
 date: 2023-07-12 01:59
+categorie: nieuws
 tags:
     - news
 cover_image: /static/img/blog/first-post.jpg

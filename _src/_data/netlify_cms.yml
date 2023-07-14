@@ -100,4 +100,5 @@ collections:
         summary: "{{fields.name}}"
         fields: 
           - {label: "Name", name: "name", widget: "string"}
+      - { label: "Categorie", name: "categorie", widget: "string"}
       - { label: "Body", name: "body", widget: "markdown", hint: "Main content goes here." }

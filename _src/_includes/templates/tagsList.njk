@@ -6,6 +6,6 @@
             {% set currentTagPage = tagPage %}
         {% endif %}
     {% endfor %}
-    {{- " \\ " if loop.index > 1 -}}
+    {{ - " \\ " if loop.index > 1 - }}
     <a href="{{ currentTagPage.data.url }}" class="tag">{{ tag }}</a>
 {%- endfor -%}
