@@ -29,7 +29,7 @@ collections:
           - { label: "Global title", name: "title", widget: "string" }
           - { label: "Global description", name: "description", widget: "text" }
           - { label: "Stream Source", name: "audio_source", widget: "string"}
-          - { label: "Logo", name: "logo", widget: "image", default: "/static/img/logo.svg" }
+          - { label: "Logo", name: "logo", widget: "image", default: "/static/svg/logo.svg" }
           - label: "Post Settings"
             name: posts
             widget: "object"

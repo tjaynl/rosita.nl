@@ -35,6 +35,11 @@
         flex-direction: row;
     }
 
+    .subtext {
+        font-size: var(--fs-200);
+        text-transform: uppercase;
+    }
+
     .left,
     .right {
         max-width: 54rem;

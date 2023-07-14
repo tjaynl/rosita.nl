@@ -21,6 +21,8 @@ const site = lume(
 );
 
 site
+    .copy("static", ".")
+
     .use(sass())
     .use(postcss())
     .use(inline())
