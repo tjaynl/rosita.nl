@@ -41,6 +41,14 @@ body {
     line-height: 1.6;
 }
 
+a {
+    color: var(--link-color, var(--clr-accent));
+
+    &:hover {
+        --link-color: var(--clr-primary);
+    }
+}
+
 
 
 // -----------------------------------------------------------------------------
@@ -165,6 +173,10 @@ article.post {
 
         h1 {
             font-size: var(--fs-800);
+        }
+
+        p {
+            max-width: var(--wrap-width, 65ch);
         }
     }
 }
