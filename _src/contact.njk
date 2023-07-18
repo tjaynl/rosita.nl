@@ -1,0 +1,21 @@
+---
+layout: layouts/hero.njk
+title: Contact
+description: =description
+menu:
+    visible: true
+    title: Contact
+    order: 5
+---
+
+<section class="[ contact ] [ region ] [ row fullwidth ]">
+    <div class="wrapper">
+        <form target="_blank" action="https://formsubmit.co/your@email.com" method="POST">
+            <input type="hidden" name="_template" value="box" />
+            <input type="text" name="name" class="form-control" placeholder="Full Name" required />
+            <input type="email" name="email" class="form-control" placeholder="Email Address" required />
+            <textarea placeholder="Your Message" class="form-control" name="message" rows="10" required></textarea>
+            <button type="submit" class="btn btn-lg btn-dark btn-block">Submit Form</button>
+        </form>
+    </div>
+</section>

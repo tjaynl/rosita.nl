@@ -16,13 +16,12 @@ const site = lume(
         src: "./_src",
         server: {
             page404: "/404/",
-        }
+        },
     },
 );
 
 site
     .copy("static", ".")
-
     .use(sass())
     .use(postcss())
     .use(inline())
@@ -38,6 +37,6 @@ site
             "MY_FORMAT": "dd-MM-yyyy",
         },
     }))
-    .use(netlify_cms())
+    .use(netlify_cms());
 
 export default site;

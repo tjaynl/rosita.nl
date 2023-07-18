@@ -1,7 +1,7 @@
 ---
 title: This is the third blog post
 draft: false
-date: 2023-07-12 22:13
+date: 2023-07-13 22:13
 categorie: nieuws
 tags:
     - news

@@ -1,7 +1,7 @@
 ---
 title: This is my first post
 draft: false
-date: 2023-07-12 01:59
+date: 2023-07-11 01:59
 cover_image: /img/blog/first-post.jpg
 tags:
   - news

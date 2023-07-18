@@ -5,6 +5,7 @@ templateEngine: [njk, md]
 landing: true
 front_limit: 3
 ---
+
 <section class="[ hero ] [ region fullwidth ]">
     <div class="[ hero__content ] [ flow ]">
         <h1>{{ hero.title }}</h1>
@@ -21,10 +22,7 @@ front_limit: 3
             {{ about.intro | md | safe }}
         </div>
         <div class="about__image">
-            <img src="{{ about.image | url }}" alt="" />
+            <img src="{{ about.image | url }}" alt=""/>
         </div>
     </div>
-</section>
-<section class="[ blog ] [ region ]" >
-    
 </section>
