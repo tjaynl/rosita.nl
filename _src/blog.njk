@@ -12,7 +12,7 @@ sort_by: date
 
 <section class="wrapper region">
     <div class="auto-grid" data-layout="thirds">
-        {% set posts = search.pages("type=post", sort_by + "=desc", "6") %}
+        {% set posts = search.pages("type=post", sort_by + "=desc" ) %}
         {%- include "templates/postsList.njk" -%}
     </div>
 </section>

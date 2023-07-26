@@ -1,0 +1,13 @@
+<div class="paginate">
+    <a href="{{ pagination.previous }}" class="paginate__item previous"></a>
+    {% for ... in ... | numToArray %}
+        <a class="paginate__item" {% if page === "/" %} href="/" {% else %} href="/page/{{ page }}" {% endif %}>
+            {% if page === "/" %}
+                1
+            {% else %}
+                {{ page }}
+            {% endif %}
+        </a>
+    {% endfor %}
+    <a href="{{ pagination.next }}" class="paginate__item next"></a>
+</div>

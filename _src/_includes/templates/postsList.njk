@@ -2,12 +2,14 @@
 <article class="card">
     <a href="{{ post.data.url | url }}">
         <header class="card-header">
-            <span class="card-header-text">{{ post.data.categorie }}</span>
             <img src="{{ post.data.cover_image | url }}" alt="Post Cover Image" class="card-header-image"/>
         </header>
         <div class="card-body flow">
+            <h5>
+                {{ post.data.categorie }}
+                <span class="color-neutral-400">{{ post.data.date | date('MY_FORMAT') }}</span>
+            </h5>
             <h3 class="heading">{{ post.data.title }}</h3>
-            <small class="color-neutral-400">{{ post.data.date | date('MY_FORMAT') }}</small>
         </div>
     </a>
 </article>
