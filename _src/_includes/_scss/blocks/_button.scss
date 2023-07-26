@@ -3,12 +3,19 @@
 //
 
 .button {
+    --button-bgcolor: var(--clr-primary);
     display: inline-block;
-    padding: var(--space-xs) var(--space-md);
+    padding: var(--space-2xs) var(--space-md);
     color: var(--button-color, #fff);
-    background-color: var(--button-bgcolor, #007bff);
+    background-color: var(--button-bgcolor);
+    border-radius: var(--button-radius, 0.25em);
+    border: transparent;
 
     &:hover {
-        background-color: darken(var(--button-bgcolor), 10%);
+        background-color: var(--clr-accent);
+    }
+
+    &:focus {
+        scale: .97;
     }
 }

@@ -49,6 +49,15 @@ a {
     }
 }
 
+input,
+textarea {
+    width: 100%;
+    border-radius: 0.25em;
+    padding: var(--space-3xs) var(--space-xs);
+    border: 1px solid var(--clr-text);
+    background-color: var(--clr-surface);
+}
+
 
 
 // -----------------------------------------------------------------------------
@@ -197,7 +206,7 @@ article.post {
 }
 
 
-body.blog {
+.blog {
     .auto-grid {
         gap: var(--space-md);
     }

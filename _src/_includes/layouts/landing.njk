@@ -3,7 +3,6 @@ layout: layouts/base.njk
 bodyClass: landing
 templateEngine: [njk, md]
 landing: true
-front_limit: 3
 ---
 
 <section class="[ hero ] [ region fullwidth ]">
@@ -24,5 +23,12 @@ front_limit: 3
         <div class="about__image">
             <img src="{{ about.image | url }}" alt=""/>
         </div>
+    </div>
+</section>
+<section class="[ blog ] [ region ] [ wrapper flow ]">
+    <h2>Laatste nieuws</h2>
+    <div class="auto-grid" data-layout="thirds">
+        {% set posts = search.pages("type=post", sort_by + "=desc", 3 ) %}
+        {%- include "templates/postsList.njk" -%}
     </div>
 </section>
