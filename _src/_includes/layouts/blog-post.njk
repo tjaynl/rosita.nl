@@ -6,7 +6,7 @@ layout: layouts/post.njk
 <div class="[ post-title ] [ region flow ]">
     <h1>{{ title | safe }}</h1>
     <div>
-        Gepubliseerd op <time datetime="{{ date | date }}">{{ date | date('dd-MM-yyyy') }}</time>
+        <time datetime="{{ date | date }}">{{ date | date('dd-MM-yyyy') }}</time>
     </div>
 </div>
 <hr>

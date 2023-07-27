@@ -5,10 +5,10 @@
             <img src="{{ post.data.cover_image | url }}" alt="Post Cover Image" class="card-header-image"/>
         </header>
         <div class="card-body flow">
-            <h5>
+            <div class="metadata">
                 {{ post.data.categorie }}
                 <span class="color-neutral-400">{{ post.data.date | date('MY_FORMAT') }}</span>
-            </h5>
+            </div>
             <h3 class="heading">{{ post.data.title }}</h3>
         </div>
     </a>
