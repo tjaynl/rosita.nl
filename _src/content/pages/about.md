@@ -1,6 +1,6 @@
 ---
 title: Over Radio Rosita
-description: pagina beschrijving
+description: Hoe het begon.
 ---
 ## De geschiedenis van Radio Rosita
 
