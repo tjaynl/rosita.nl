@@ -46,5 +46,3 @@ Zo schoorde hij in 1994 een hit met Onze fiets is wieder da. en zelfs in 2004 ee
 ### Harry & de Beugels zorgen voor een superfeest
 
 Met hun grote hit “Leaft oonze oale zoeplappe nog?” toeren ze door heel Overijsel en de Achterhoek. Overal waar ze optreden is het een half uur groot feest. Naast de bekende hit brengen ze nu een compleet programma waarbij het feestgehalte 100% is. Ook verschijnen ze op veel radio en tv stations. Ook Groningen heeft Harry en de Beugels inmiddels ontdekt, en Nederland zal de komende tijd nog veel van ze horen!
-
-Het Management van Harry & De Beugels is in handen van Rosita muziekorganisatie. Voor info kunt u bellen met 053 5726677 of mailen naar info@rosita.nl.
