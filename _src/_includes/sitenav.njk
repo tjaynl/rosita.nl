@@ -6,7 +6,7 @@
         </a>
         <nav class="site-nav">
             <ul class="site-nav__list" role="list">
-                {% for entry in search.pages("menu.visible=true", "menu.order") %}
+                {% for entry in search.pages( menu.visible: "true", menu.order ) %}
                     <li class="site-nav__item">
                         <a href="{{ entry.data.url | url }}" class="site-nav__link {% if entry.data.menu.cta %}site-nav__cta {% endif %}" {% if entry.data.url==url %} aria-current="page" {% endif %}>{{ entry.data.menu.title or entry.data.title }}</a>
                     </li>
