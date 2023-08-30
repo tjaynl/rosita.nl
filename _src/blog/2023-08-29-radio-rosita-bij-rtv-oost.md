@@ -1,7 +1,7 @@
 ---
 title: Radio Rosita bij RTV OOST
 draft: false
-date: 29-08-2023 19:50
+date: 29-08-2023 19:23
 cover_image: /static/img/blog/rosita.jpg
 categorie: Nieuws
 ---
