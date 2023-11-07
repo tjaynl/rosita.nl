@@ -1,0 +1,19 @@
+layout: layouts/landing.vto
+title: Homepage
+description: Cool page description
+image: https://images.unsplash.com/photo-1459749411175-04bf5292ceea?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D
+menu:
+  visible: true
+  title: Home
+  order: 1
+sort_by: date
+
+hero:
+  title: Luister en geniet met Radio Rosita
+  image: =image
+
+about:
+  title: Over Radio Rosita
+  description: >
+    Radio Rosita is begonnen door harry hoestee, die heeft van dit station een mega festijn gemaakt. Het station heeft een tijdje stil gelegen door verschillende eigenaren. Maar nu is Jeffrey Endeman de eigenaar van het bedrijf, en gaat er met frisse en goede moed er tegen aan!
+  image: https://images.unsplash.com/photo-1487180144351-b8472da7d491?auto=format&fit=crop&q=80&w=1472&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D

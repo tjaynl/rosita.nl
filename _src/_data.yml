@@ -1,7 +1,0 @@
-metas:
-  title: =title
-  description: =description
-  twitter: "@radiorosita"
-  icon: static/images/og-img.png
-  lang: nl
-  generator: true

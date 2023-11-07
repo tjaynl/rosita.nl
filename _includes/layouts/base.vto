@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>{{ site.title }} - {{ title }}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="/global.css" rel="stylesheet">
+  </head>
+  <body>
+    {{ include "templates/site-header.vto" }}
+    <main>
+      {{ content }}
+    </main>
+    {{ include "templates/site-footer.vto" }}
+  </body>
+</html>

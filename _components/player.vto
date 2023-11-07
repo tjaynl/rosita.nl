@@ -1,0 +1,27 @@
+<div class="audio-player">
+  <div class="audio-player__thumb"></div>
+  <div class="audio-player__inner">
+    <audio src="{{ site.audio_source }}"></audio>
+    <div class="audio-player__controls">
+      <button class="button play">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="white">
+          <path fill-rule="evenodd"
+            d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z"
+          clip-rule="evenodd"/>
+        </svg>
+      </button>
+      <input class="timeline" type="range" max="100" value="0" />
+      <div class="audio-player__volume">
+        <div class="icon speaker [ toggle-icon ]"></div>
+        <div class="bars">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <input class="volume-input" type="range" min="0" max="100" step="20" value="20"/>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

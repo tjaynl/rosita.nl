@@ -1,0 +1,81 @@
+//
+// Theme Color(s)
+//
+
+// THEME: Light
+
+$light: (
+  "theme": (
+   "text": hsl(240, 20%, 1%),
+   "background": hsl(240, 35%, 94%),
+  ),
+  "primary": (
+    "300": hsl(74, 92%, 70%),
+    "500": hsl(243, 36%, 21%),
+  ),
+  "secondary": (
+    "300": hsl(243, 38%, 95%),
+    "500": hsl(243, 38%, 88%),
+  ),
+  "accent": (
+    "500": hsl(47,92%, 49%),
+  ),
+);
+
+// THEME: Dark
+
+$dark: (
+  "theme": (
+    "text": hsl(240, 20%, 99%),
+    "background": hsl(240, 35%, 6%),
+  ),
+  "primary": (
+    "300": hsl(243, 36%, 92%),
+    "500": hsl(243, 36%, 79%),
+  ),
+  "secondary": (
+    "300": hsl(243, 38%, 25%),
+    "500": hsl(243, 38%, 12%),
+  ),
+  "accent": (
+    "500": hsl(47, 92%, 51%),
+  ),
+);
+
+
+
+//
+// contextual color tokens
+//
+
+$color-neutral-000: var(--neutral-000);
+$color-neutral-100: var(--neutral-100);
+$color-neutral-200: var(--neutral-200);
+$color-neutral-300: var(--neutral-300);
+$color-neutral-400: var(--neutral-400);
+$color-neutral-500: var(--neutral-500);
+$color-neutral-600: var(--neutral-600);
+$color-neutral-700: var(--neutral-700);
+$color-neutral-800: var(--neutral-800);
+$color-neutral-900: var(--neutral-900);
+$color-neutral-1000: var(--neutral-1000);
+
+$color-primary-100: var(--primary-100);
+$color-primary-200: var(--primary-200);
+$color-primary-300: var(--primary-300);
+$color-primary-400: var(--primary-400);
+$color-primary-500: var(--primary-500);
+$color-primary-600: var(--primary-600);
+$color-primary-700: var(--primary-700);
+$color-primary-800: var(--primary-800);
+$color-primary-900: var(--primary-900);
+
+$color-accent-100: var(--accent-100);
+$color-accent-200: var(--accent-200);
+$color-accent-300: var(--accent-300);
+$color-accent-400: var(--accent-400);
+$color-accent-500: var(--accent-500);
+$color-accent-600: var(--accent-600);
+$color-accent-700: var(--accent-700);
+$color-accent-800: var(--accent-800);
+$color-accent-900: var(--accent-900);

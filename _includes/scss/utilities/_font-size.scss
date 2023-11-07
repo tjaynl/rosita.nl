@@ -1,0 +1,7 @@
+@use "../abstracts" as *;
+
+@each $prop, $value in $type-scales {
+ .fs-#{$prop} {
+   font-size: #{$value};
+ } 
+}

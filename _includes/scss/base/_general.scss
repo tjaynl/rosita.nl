@@ -1,0 +1,43 @@
+@use "../abstracts" as *;
+@forward "../abstracts/font-face";
+
+body {
+  font-family: $body-font-family;
+  font-weight: $body-font-weight;
+  font-size: $body-font-size;
+  color: $body-text-color;
+  background-color: $body-background-color;
+  line-height: $body-line-height;
+}
+
+
+
+a:not([class]) {
+  color: $link-color;
+
+  &:is(:hover, :focus) {
+    color: $link-color-hover;
+  }
+}
+
+
+::selection,
+::-moz-selection {
+  color: #{$selection-text};
+  background-color: #{$selection-background};
+}
+
+
+
+p, li,
+blockquote:not([class]) {
+  max-width: 65ch;
+}
+
+h1, h2, h3 {
+  max-width: 20ch;
+}
+
+[role="list"] {
+  padding: 0;
+}

@@ -1,0 +1,73 @@
+@use "../abstracts" as *;
+
+.post {
+
+  &-header {
+    margin-block: 3.3vmax;
+    &__title {
+      max-width: unset;
+    }
+
+    &__image {
+      border-radius: #{$border-radius-1};
+      aspect-ratio: 4/3;
+    }
+  }
+  
+}
+
+
+.post__nav {
+    display: flex;
+    padding-inline: 1rem;
+    width: 100%;
+    max-width: #{$wrapper-max-width-wide};
+    margin-inline: auto;
+
+    .left,
+    .right {
+        max-width: 40rem;
+        text-decoration: none;
+        color: var(--neutral-100);
+
+        &[data-animate*=from-] {
+            transform: translate3d(0,0,0);
+            transition: transform .6s cubic-bezier(.4,.3,.1,1),opacity .6s cubic-bezier(.4,.3,.1,1),-webkit-transform .6s cubic-bezier(.4,.3,.1,1);
+        }
+
+        & > * {
+            --smooth-transition: 0.6s cubic-bezier(0.4, 0.3, 0.1, 1);
+            transition: var(--smooth-transition);
+
+            &:first-child {
+                transition-delay: .03s;
+            }
+        }
+    }
+
+    .right {
+        padding-left: var(--space-m);
+        text-align: right;
+        margin-left: auto;
+
+        &:is(:hover, :focus) > * {
+            transform: translateX(-1rem);
+        }
+    }
+
+
+    .left {
+        margin-left: 0;
+        margin-right: auto;
+        text-align: left;
+        padding-right: var(--space-m);
+
+        &:is(:hover, :focus) > * {
+            transform: translateX(1rem);
+        }
+    }
+
+    .subtext {
+        text-transform: uppercase;
+    }
+}

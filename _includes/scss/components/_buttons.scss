@@ -1,0 +1,39 @@
+@use "../abstracts" as *;
+
+button,
+.button {
+  background-color: var(--primary-500);
+  color: var(--secondary-500);
+  font-size: var(--fs-300);
+  font-weight: 600;
+  text-transform: uppercase;
+  display: inline-flex;
+  padding: .75em 1.25em;
+  align-items: center;
+  border: 2px solid transparent;
+  border-radius: var(--size-3xs);
+  text-decoration: none;
+  transition: all 5ms ease-in-out;
+  cursor: pointer;
+
+  &:hover {
+    background-color: var(--primary-300)
+  }
+
+  &:focus {
+    scale: 0.9
+  }
+}
+
+
+
+//
+//
+//
+
+.button {
+  &[data-variant="ghost"] {}
+
+
+  &[data-variant="disabled"] {}
+}

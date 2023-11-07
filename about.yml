@@ -1,0 +1,22 @@
+layout: layouts/about.vto
+title: Over Radio Rosita
+description: Some cool description
+image: https://images.unsplash.com/photo-1485579149621-3123dd979885?q=80&w=1931&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+menu:
+  visible: true
+  title: Over ons
+  order: 2
+
+hero:
+  title: Over ons
+  image: =image
+
+about:
+  title: Over Radio Rosita
+  body: >
+    Integer facilisis arcu eu odio lobortis ultricies. Donec quis arcu et ligula varius vulputate eget at magna.
+    Pellentesque mollis, augue in bibendum imperdiet, nulla risus rhoncus turpis, eu sollicitudin arcu metus nec mauris.
+    Sed mattis sollicitudin dui mattis tincidunt. Etiam sed eleifend nisi.
+    Etiam est nulla, elementum in suscipit mollis, rutrum mollis mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    Pellentesque dui risus, cursus tempus turpis at, imperdiet consequat est.
+  image: https://images.unsplash.com/photo-1584541728894-dbcae08f94ac?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D

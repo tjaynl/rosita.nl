@@ -1,0 +1,37 @@
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 900;
+  src: local('./assets/fonts/Montserrat-Black.woff2') format('woff2'),
+       local('./assets/fonts/Montserrat-Black.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 800;
+  src: local('./assets/fonts/Montserrat-Extra-Bold.woff2') format('woff2'),
+       local('./assets/fonts/Montserrat-Extra-Bold.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Montserrat';
+  font-weight: 700;
+  src: local('./assets/fonts/Montserrat-Bold.woff2') format('woff2'),
+       local('./assets/fonts/Montserrat-Bold.woff') format('woff');
+}
+
+
+// Open Sans
+
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 400;
+  src: local('./assets/fonts/OpenSans-Regular.woff2') format('woff2'),
+       local('./assets/fonts/OpenSans-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  font-weight: 600;
+  src: local('./assets/fonts/OpenSans-Semibold.woff2') format('woff2'),
+       local('./assets/fonts/OpenSans-Semibold.woff') format('woff');
+}

@@ -1,0 +1,20 @@
+---
+layout: layouts/base.vto
+title: Radio Rosita Blog
+description: Blijf op de hoogte van het laatste nieuws
+image: 
+menu:
+  visible: true
+  order: 3
+  title: Blog
+sort_by: date
+---
+<section class="[ blogList ] [ region ]">
+  <div class="wrapper [ flow ]">
+    <span class="section-title">Rosita blog</span>
+    <h1 class="title [ fs-800 fw-bold ]">{{ title }}</h1>
+    <div class="grid" data-layout="thirds">
+    {{ set posts = search.pages("type=post", sort_by + "=desc") }}
+    {{ include "templates/postsList.vto" }}
+  </div>
+</section>

@@ -1,0 +1,41 @@
+---
+layout: layouts/base.vto
+---
+<section class="[ hero ]" style="background-image: url('{{image}}');">
+  <div class="[ hero__inner ] [ wrapper ]">
+    <div class="flow">
+  <h1 class="title [ fw-bold ]">{{ hero.title }}</h1>
+      <!-- <p>{{ hero.description }}</p> -->
+    </div>
+  </div>
+  <div class="header-bottom-player">
+    <div class="[ wrapper ]">
+    {{ include "templates/player.vto" }}
+    </div>
+  </div>
+</section>
+<section class="[ about ] [ region ]">
+  <div class="[ wrapper ]">
+    <div class="grid" data-layout="halfs">
+      <div class="about__content [ flow ]">
+        <span class="section-title">Over ons</span>
+        <h2 class="title [ fs-700 fw-bold ]">{{ about.title }}</h2>
+        <p>{{ about.description }}</p>
+        <a href="/about" class="button">Lees meer</a>
+      </div>
+      <div class="about__image">
+        <img src="{{ about.image }}" />
+      </div>
+    </div>
+  </div>
+</section>
+<section class="[ blog ] [ region ]">
+  <div class=" [ wrapper ] [ flow ]">
+    <span class="section-title">Rosita Blog</span>
+    <h2 class="title [ fs-700 fw-bold ]">Nieuws</h2>
+    <div class="[ postsList ] [ grid ]" >
+      {{ set posts = search.pages("type=post", sort_by + "=desc", 3) }}
+      {{ include "templates/postsList.vto" }}
+    </div>
+  </div>
+</section>

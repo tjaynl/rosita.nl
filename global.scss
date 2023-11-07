@@ -1,0 +1,182 @@
+@forward "scss/base";
+@forward "scss/components";
+@forward "scss/layouts";
+@forward "scss/utilities";
+
+@use "scss/abstracts" as *;
+
+// @tailwind base;
+// @tailwind components;
+// @tailwind utilities;
+
+// -----------------------------------------------------------------------------
+// Base
+// -----------------------------------------------------------------------------
+
+html { scroll-behaviour: smooth; }
+
+input,
+select,
+textarea {
+  color: var(--theme-text);
+  background-color: var(--theme-background);
+  width: 100%;
+  padding: var(--size-2xs) var(--size-xs);
+  border: 1px solid;
+  border-radius: .5rem;
+}
+
+
+
+// -----------------------------------------------------------------------------
+// Globals
+// -----------------------------------------------------------------------------
+
+
+
+.header-bottom-player {
+  background-color: rgba(0,0,0,0.75);
+}
+
+
+.section-title {
+  color: var(--accent-500);
+  font-size: var(--fs-200);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: .125rem;
+}
+
+.title {
+  margin-top: 0;
+  font-family: var(--ff-accent);
+}
+
+
+
+// -----------------------------------------------------------------------------
+// Components
+// -----------------------------------------------------------------------------
+.site-header {
+  border-bottom: 1px solid rgba(255,255,255,.05);
+}
+
+.site-header__inner .logo {
+  flex: 1;
+
+  & > svg {
+    max-width: 80px;
+  }
+}
+
+
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  background-color: var(--hero-bgcolor, var(--accent-500));
+  background-size: cover;
+  background-position: center center;
+  background-blend-mode: overlay;
+
+  &__inner {
+    padding-block: 12.12vmax;
+    text-align: center;
+  }
+
+  .title {
+    color: var(--theme-background);
+    font-family: $font-family-accent;
+    font-size: var(--fs-900);
+    line-height: 1.1;
+  }
+}
+
+
+
+.header-bottom-player {
+  padding-block: .5rem;
+  z-index: 1;
+}
+
+
+.about {
+  
+  .grid {
+    align-items: center;
+  }
+
+  &__image {
+    img {
+      border-radius: $border-radius-1;
+    }
+  }
+}
+
+
+.blog {
+  background-color: var(--secondary-500);
+
+
+  .postlist {
+    --grid-placement: auto-fit;
+    --grid-min-item-size: clamp(16rem, 33%, 20rem);
+  }
+}
+
+
+
+.site-footer {
+  --region-space: 3.3vmax;
+  
+  p {
+     max-width: unset;
+     text-align: center;
+   }
+}
+
+
+
+// -----------------------------------------------------------------------------
+// Utilities
+// -----------------------------------------------------------------------------
+
+.region {
+  padding-block: var(--region-space, 6.6vmax);
+}
+
+
+
+// -----------------------------------------------------------------------------
+// Blocks
+// -----------------------------------------------------------------------------
+
+.site-nav { 
+  &__list {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+  }
+
+  &__item {
+    max-width: unset;
+    width: auto;
+
+    a {
+      text-decoration: none;
+      padding: var(--size-xs);
+      transition: all 3ms ease-in-out;
+
+      &:is(:hover, :focus) {
+        color: var(--primary-500);
+      }
+
+      &[aria-current="page"] {
+        color: var(--accent-500);
+        font-weight: 600;
+        line-height: 1;
+      }
+    }
+  }
+}

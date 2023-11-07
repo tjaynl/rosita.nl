@@ -1,0 +1,21 @@
+@use "../abstracts" as *;
+
+.card {
+  background: $card-background-color;
+  border-radius: #{$border-radius-1};
+  overflow: hidden;
+  box-shadow: $card-box-shadow-default;
+
+  &:hover {
+    box-shadow: $card-box-shadow-hover;
+  }
+  
+  &__image img {
+    object-fit: cover;
+  }
+
+  &__content {
+    color: $card-text-color;
+    padding: var(--size-s-l);
+  }
+}

@@ -1,0 +1,17 @@
+---
+layout: layouts/base.vto
+---
+<section class="[ hero ]" style="background-image: url('{{image}}');">
+  <div class="[ hero__inner ] [ wrapper ]">
+    <div class="flow">
+      <h1 class="title [ fw-bold ]">{{ hero.title }}</h1>
+      <!-- <p>{{ hero.description }}</p> -->
+    </div>
+  </div>
+  <div class="header-bottom-player">
+    <div class="[ wrapper ]">
+    {{ include "templates/player.vto" }}
+    </div>
+  </div>
+</section>
+{{ content }}

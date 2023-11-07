@@ -1,0 +1,35 @@
+---
+layout: layouts/base.vto
+sort_by: =sort_by
+---
+<header class="post-header">
+  <div class="wrapper [ flow ] text-center">
+    <img class="post-header__image" src="{{ image |> url }}" alt="thumbnail">
+    <h1 class="post-header__title [ fs-700 fw-bold ]">{{ title }}</h1>
+    <span class="fs-300">Gepubliceerd op <time datetime="{{ date |> date }}">{{ date |> date('dd/MM/yyyy') }}</time></span> 
+  </div>
+</header>
+
+<article class="[ post ]">
+  <div class="wrapper [ flow ]" data-type="narrow">
+  {{ content }}
+  </div>
+</article>
+
+<section class="post__nav [ region ] [ flow ]">
+  {{ set previousItem = search.previousPage(url, "type=" + type, sort_by) }}
+  {{ if previousItem }}
+  <a data-animate="from-left" class="left" href="{{ previousItem.data.url |> url }}">
+    <div class="subtext [ fs-200 ]">Previous</div>
+    <h3 class="headline [ fs-600 fw-bold color-neutral-800 ]">{{ previousItem.data.title }}</h3>
+  </a>
+  {{ /if }}
+
+  {{ set nextItem = search.nextPage(url, "type=" + type, sort_by) }}
+  {{ if nextItem }}
+  <a data-animate="from-right" class="right" href="{{ nextItem.data.url |> url }}">
+    <div class="subtext [ fs-200 ]">Next</div>
+    <h3 class="headline [ fs-600 fw-bold color-neutral-800 ]">{{ nextItem.data.title }}</h3>
+  </a>
+  {{ /if }}
+</section>

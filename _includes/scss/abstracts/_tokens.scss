@@ -1,0 +1,80 @@
+@use "colors" as *;
+@use "typography" as *;
+@use "sizes" as *;
+
+$active-theme: $dark;
+$enable-media-query-dark-mode: false;
+
+// Contextual
+$color-text-default: var(--theme-text);
+$color-text-interactive-default: $color-primary-400;
+$color-text-interactive-hover: $color-accent-500;
+
+$color-background-default: var(--theme-background);
+
+
+// Border Radius
+
+$border-radius-1: var(--size-xs);
+$border-radius-2: var(--size-xl);
+
+
+$box-shadow-1: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+$box-shadow-2: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+
+
+// Selection(s)
+$selection-text: rgba(0,0,0,.85);
+$selection-background: var(--accent-500);
+
+// Body
+$body-font-family: $font-family-base;
+$body-font-size: $font-size-400;
+$body-line-height: 1.5;
+$body-font-weight: $font-weight-default;
+$body-text-color: $color-text-default;
+$body-background-color: $color-background-default;
+
+// Anchor(s)
+$link-color: var(--primary-500);
+$link-color-hover: var(--accent-500);
+
+
+// Layout
+$grid-gap: var(--size-s-l);
+$flex-group-gap: var(--size-s-l);
+
+$hero-padding-block: var(--size-3xl);
+$section-padding-block: 6.6vmax;
+
+
+
+// Site header
+$site-header-color: $color-text-default;
+$site-header-background-color: $color-background-default;
+$site-header-padding: var(--size-s) 0;
+
+$site-header-justification-small-screens: center;
+$site-header-justification-large-screens: space-between;
+
+
+
+// Container(s)
+
+$wrapper-min-margin-inline: var(--size-s-l);
+
+$wrapper-max-width: 69rem;
+$wrapper-max-width-narrow: 40rem;
+$wrapper-max-width-wide: 80rem;
+
+
+
+//
+// Card(s)
+//
+
+$card-text-color: var(--theme-text);
+$card-background-color: var(--theme-background);
+$card-padding: var(--size-s-l);
+$card-box-shadow-default: $box-shadow-1;
+$card-box-shadow-hover: $box-shadow-2;
