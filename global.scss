@@ -32,13 +32,6 @@ textarea {
 // Globals
 // -----------------------------------------------------------------------------
 
-
-
-.header-bottom-player {
-  background-color: rgba(0,0,0,0.75);
-}
-
-
 .section-title {
   color: var(--accent-500);
   font-size: var(--fs-200);
@@ -57,19 +50,6 @@ textarea {
 // -----------------------------------------------------------------------------
 // Components
 // -----------------------------------------------------------------------------
-.site-header {
-  border-bottom: 1px solid rgba(255,255,255,.05);
-}
-
-.site-header__inner .logo {
-  flex: 1;
-
-  & > svg {
-    max-width: 80px;
-  }
-}
-
-
 
 .hero {
   position: relative;
@@ -95,17 +75,13 @@ textarea {
 
 
 .header-bottom-player {
+  background-color: rgba(0,0,0,0.75);
   padding-block: .5rem;
   z-index: 1;
 }
 
 
 .about {
-  
-  .grid {
-    align-items: center;
-  }
-
   &__image {
     img {
       border-radius: $border-radius-1;
@@ -116,7 +92,6 @@ textarea {
 
 .blog {
   background-color: var(--secondary-500);
-
 
   .postlist {
     --grid-placement: auto-fit;
@@ -151,32 +126,3 @@ textarea {
 // Blocks
 // -----------------------------------------------------------------------------
 
-.site-nav { 
-  &__list {
-    list-style: none;
-    display: flex;
-    margin-left: auto;
-    align-items: center;
-  }
-
-  &__item {
-    max-width: unset;
-    width: auto;
-
-    a {
-      text-decoration: none;
-      padding: var(--size-xs);
-      transition: all 3ms ease-in-out;
-
-      &:is(:hover, :focus) {
-        color: var(--primary-500);
-      }
-
-      &[aria-current="page"] {
-        color: var(--accent-500);
-        font-weight: 600;
-        line-height: 1;
-      }
-    }
-  }
-}

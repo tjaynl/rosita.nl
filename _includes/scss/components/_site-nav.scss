@@ -1,0 +1,31 @@
+@use "../abstracts" as *;
+
+.site-nav { 
+  &__list {
+    list-style: none;
+    display: flex;
+    margin-left: auto;
+    align-items: center;
+  }
+
+  &__item {
+    max-width: unset;
+    width: auto;
+
+    a {
+      text-decoration: none;
+      padding: var(--size-xs);
+      transition: all 3ms ease-in-out;
+
+      &:is(:hover, :focus) {
+        color: var(--primary-500);
+      }
+
+      &[aria-current="page"] {
+        color: var(--accent-500);
+        font-weight: 600;
+        line-height: 1;
+      }
+    }
+  }
+}
