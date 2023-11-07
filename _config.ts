@@ -12,7 +12,15 @@ import date from "lume/plugins/date.ts";
 import vento from "lume/plugins/vento.ts";
 import nl from "npm:date-fns/locale/nl/index.js";
 
-const site = lume();
+const site = lume(
+    {
+        location: new URL("https://rosita.nl"),
+        //src: ".",
+        server: {
+            page404: "/404/",
+        },
+    },
+);
 
 site
   .copy("static", "./assets")
