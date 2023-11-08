@@ -15,3 +15,25 @@ layout: layouts/base.vto
     </div>
   </div>
 </section>
+<section class="[ team ] [ region ] [ bg-secondary-500 ]">
+  <div class="wrapper [ flow ]">
+    <div>
+    <span class="section-title">Ons Team</span>
+    <h3 class="title [ fs-700 fw-bold ] ">{{ team.title }}</h3>
+    </div>
+    <div class="[ grid ]" data-layout="halfs" data-rows="masonry">
+      {{ for member of members }}
+      <div class="card">
+        <div class="card__image">
+          <img src="{{ member.image }}" alt="{{ member.name }}" />
+        </div>
+        <div class="card__content [ flow ]">
+            <h4 class="[ fs-500 fw-bold ]">{{ member.name }}<h4>
+            <p class="[ fs-300 text-primary-300 ]">{{ member.functie }}</p>
+            <p>{{ member.description }}</p>
+        </div>
+      </div>
+      {{ /for }}
+    </div>
+  </div>
+</section>

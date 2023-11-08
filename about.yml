@@ -21,3 +21,17 @@ about:
     Etiam est nulla, elementum in suscipit mollis, rutrum mollis mi. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
     Pellentesque dui risus, cursus tempus turpis at, imperdiet consequat est.
   image: https://images.unsplash.com/photo-1584541728894-dbcae08f94ac?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+
+team:
+  title: Team Rosita
+
+members:
+  - name: Jeffrey Endeman
+    image: https://images.unsplash.com/photo-1481437642641-2f0ae875f836?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+    functie: Radio DJ
+    description: Eigenaar en diskjockey met een liefde voor ...
+  
+  - name: ...
+    image: https://images.unsplash.com/photo-1481437642641-2f0ae875f836?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D
+    functie: ...
+    description: ...

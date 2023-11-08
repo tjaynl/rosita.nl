@@ -132,6 +132,15 @@ hr {
 }
 
 
+.team {
+
+  .memberlist {
+    --grid-placement: auto-fit;
+    --grid-min-item-size: 16rem, 50vw, 20rem;
+  }
+}
+
+
 .blog {
   .postlist {
     --grid-placement: auto-fit;
