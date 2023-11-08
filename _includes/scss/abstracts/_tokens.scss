@@ -27,6 +27,12 @@ $box-shadow-2: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0,
 $selection-text: rgba(0,0,0,.85);
 $selection-background: var(--accent-500);
 
+
+// form select
+$select-border: var(--primary-500);
+$select-focus: var(--accent-500);
+$select-arrow: var(--primary-300);
+
 // Body
 $body-font-family: $font-family-base;
 $body-font-size: $font-size-400;
